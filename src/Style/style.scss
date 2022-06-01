@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  background-color: #EEEBD3;
+
+  #navigation {
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-weight: 600;
+    background-color: #437C90;
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  #btnsBox {
+    margin: auto;
+    text-align: center;
+
+    button {
+      margin: 10px 20px;
+      padding: 15px;
+      width: 150px;
+      border-radius: 5px;
+      background-color: #F7C548;
+      cursor: pointer;
+      -webkit-box-shadow: 4px 4px 4px 0px rgba(177, 140, 34, 1);
+      -moz-box-shadow: 4px 4px 4px 0px rgba(177, 140, 34, 1);
+      box-shadow: 4px 4px 4px 0px rgba(177, 140, 34, 1);
+      border: none;
+    }
+  }
+}
