@@ -1,21 +1,31 @@
 import React from "react";
+import { useState } from 'react';
 
 export default function Form() {
-
-
-  return(
-    <div>
-      <DisplayBtn />
-    </div>
-  );
-}
-
-function DisplayBtn() {
+  const [card, setCard] = useState('')
   const Btns = ['Normalna Karta', 'Koleje', 'Specjalna']
 
   return(
     <div id="btnsBox">
-      {Btns.map(el => <button key={el} value={el}>{el}</button>)}
+      {Btns.map(el => <button onClick= {() => setCard(el)} key={el} value={el}>{el}</button>)}
+      <CheckCard value={card}/>
     </div>
-  )
+  );
+}
+
+function CheckCard(card) {
+  let normalCard = ['Name', 'Cost', 'With one house', 'With two', 'With three', 'With four', 'With hotel']
+
+  if(card.value === '') {
+    return ''
+  } else if (card.value === 'Normalna Karta') {
+    return(
+      <div class="valueCard">
+        <form>
+          {normalCard.map(el => <p><label>{el}: </label><input type="text"></input></p>)}
+          <button id="addCard">Add Card</button>
+        </form>
+      </div>
+    )
+  }
 }

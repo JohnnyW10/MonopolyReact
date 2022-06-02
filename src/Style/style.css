@@ -32,3 +32,52 @@ body #btnsBox button {
   box-shadow: 4px 4px 4px 0px #b18c22;
   border: none;
 }
+
+body #btnsBox button:hover {
+  animation: buttonHover .05s linear both;
+}
+
+body .valueCard {
+  display: flex;
+  width: 500px;
+  border-radius: 5px;
+  background-color: #F7C548;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 4px 0px #b18c22;
+  -moz-box-shadow: 4px 4px 4px 0px #b18c22;
+  box-shadow: 4px 4px 4px 0px #b18c22;
+  border: none;
+  margin: 50px auto;
+}
+
+body .valueCard form {
+  width: 100%;
+}
+
+body .valueCard form p {
+  width: 100%;
+  text-align: center;
+}
+
+body .valueCard form p label {
+  width: 50%;
+}
+
+body .valueCard form p input {
+  width: 40%;
+  border-radius: 10px;
+  background-color: #EEEBD3;
+}
+
+body .valueCard form #addCard {
+  border: 1px solid black;
+}
+
+@keyframes buttonHover {
+  from {
+    background-color: #F7C548;
+  }
+  to {
+    background-color: #f8b817;
+  }
+}

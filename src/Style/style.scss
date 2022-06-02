@@ -29,6 +29,59 @@ body {
       -moz-box-shadow: 4px 4px 4px 0px rgba(177, 140, 34, 1);
       box-shadow: 4px 4px 4px 0px rgba(177, 140, 34, 1);
       border: none;
+
+      &:hover {
+        animation: buttonHover .05s linear both;
+      }
     }
+  }
+
+
+  .valueCard {
+    display: flex;
+    width: 500px;
+    border-radius: 5px;
+    background-color: #F7C548;
+    cursor: pointer;
+    -webkit-box-shadow: 4px 4px 4px 0px rgba(177, 140, 34, 1);
+    -moz-box-shadow: 4px 4px 4px 0px rgba(177, 140, 34, 1);
+    box-shadow: 4px 4px 4px 0px rgba(177, 140, 34, 1);
+    border: none;
+    margin: 50px auto;
+    
+    form {
+      width: 100%;
+
+      p{
+        width: 100%;
+        text-align: center;
+  
+        label {
+          width: 50%;
+        }
+    
+        input {
+          width: 40%;
+          border-radius: 10px;
+          background-color: #EEEBD3;
+        }
+      }
+
+      #addCard {
+        border: 1px solid black;
+      }
+    }
+  }
+}
+
+
+
+@keyframes buttonHover {
+  from {
+    background-color: #F7C548;
+  }
+
+  to {
+    background-color: #f8b817;
   }
 }
